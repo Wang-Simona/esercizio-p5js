@@ -8,7 +8,7 @@ function preload(){
 let mic;
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  background(1);
+  background(0);
   mic = new p5.AudioIn();  
   mic.start();
 }
