@@ -11,6 +11,7 @@ function setup() {
   background(0);
   mic = new p5.AudioIn();  
   mic.start();
+  loop(1); // 只运行一次提高性能
 }
 
 
