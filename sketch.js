@@ -8,7 +8,7 @@ function preload(){
 let mic;
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  background(0);
+  background(1);
   mic = new p5.AudioIn();  
   mic.start();
 }
@@ -64,7 +64,7 @@ circle(mouseX,mouseY,20);
 }
 
 //屏幕跟随变化
-//function windowResized() {resizeCanvas(windowWidth,windowHeight)}
+function windowResized() {resizeCanvas(windowWidth,windowHeight)}
 
 //截图
 //function mouseClicked(){save ("image.png")}
