@@ -1,4 +1,3 @@
-let mic;
 let font;
 let angle = 0;
 
@@ -6,11 +5,11 @@ function preload(){
   font = loadFont('BAUHS93.TTF');
 }
 
+let mic;
 function setup() {
-  createCanvas(400,400);
+  createCanvas(windowWidth,windowHeight);
   background(0);
-
-  mic = new p5.AudioIn();
+  mic = new p5.AudioIn();  
   mic.start();
 }
 
@@ -63,3 +62,12 @@ fill(255, 20, 147)
 circle(mouseX,mouseY,20);
 
 }
+
+//屏幕跟随变化
+//function windowResized() {resizeCanvas(windowWidth,windowHeight)}
+
+//截图
+//function mouseClicked(){save ("image.png")}
+
+//截图动图
+//function mousePressed() {saveGif('myAnimation', 3)}
